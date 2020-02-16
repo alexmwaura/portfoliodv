@@ -1,7 +1,7 @@
 from .base import *
 
 DEBUG = True
-ALLOWED_HOSTS='alexfolio23.herokuapp.com'
+ALLOWED_HOSTS=['alexfolio23.herokuapp.com']
 
 INSTALLED_APPS += [
     'debug_toolbar' 
