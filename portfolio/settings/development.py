@@ -1,10 +1,10 @@
 from .base import *
 
 DEBUG = True
-ALLOWED_HOSTS = 'alexfolio23.herokuapp.com'
+ALLOWED_HOSTS=''
 
 INSTALLED_APPS += [
-    'debug_toolbar'
+    'debug_toolbar' 
 ]
 
 MIDDLEWARE += ['debug_toolbar.middleware.DebugToolbarMiddleware', ]

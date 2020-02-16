@@ -10,7 +10,7 @@ MODE=config("MODE", default="dev")
 
 
 DEBUG = config('DEBUG', cast=bool)
-ALLOWED_HOSTS = 'alexfolio23.herokuapp.com'
+ALLOWED_HOSTS='alexfolio23.herokuapp.com'
 
 
 AUTH_PASSWORD_VALIDATORS = [
