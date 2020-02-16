@@ -1,4 +1,13 @@
 from .base import *
+import os
+import django_heroku
+import dj_database_url
+from decouple import config,Csv
+
+
+
+MODE=config("MODE", default="dev")
+
 
 DEBUG = config('DEBUG', cast=bool)
 ALLOWED_HOSTS = ['ip-address', 'www.your-website.com']
@@ -20,3 +29,7 @@ DATABASES = {
         'PORT': ''
     }
 }
+
+
+
+django_heroku.settings(locals())
